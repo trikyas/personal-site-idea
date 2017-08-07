@@ -19,6 +19,15 @@ body {
   padding: 0;
   font-size: 16px;
 }
+#main-heading blockquote, div.jkit-morediv, .parallax2, .parallax3 {
+  font-family: 'Flamenco';
+}
+#main-heading blockquote, h2, .parallax3, .parallax2 {
+  text-shadow: 0 0 2px #444;
+}
+.parallax2, .parallax3 {
+  background-size: contain;
+}
 #main-heading {
   border-bottom: 1px solid #ddd;
   box-shadow: 0 3px 3px #999;
@@ -26,7 +35,7 @@ body {
   padding-bottom: 20vh;
   background: linear-gradient(#fff 80%, #eee 97%);
 }
-#main-heading h1, #main-heading blockquote {
+#main-heading h1, #main-heading blockquote, div.jkit-morediv, div.parallax-container div.parallax {
   text-align: center;
 }
 #main-heading h1 {
@@ -35,11 +44,9 @@ body {
   text-shadow:0 0 1px #333, 0 0 6px #ccc, 9px 1px 5px #aaa;
 }
 #main-heading blockquote {
-  font-family: 'Flamenco';
   font-size: 3em;
   margin-top: -5vh;
   color: rgba(255,255,255,0.50);
-  text-shadow: 0 0 2px #444;
   filter: drop-shadow(0 0 3px #ccc);
 }
 .num, .num1, .num2 {
@@ -63,13 +70,11 @@ main {
   margin: -15vh auto;
 }
 div.jkit-morediv {
-  font-family: 'Flamenco';
   font-size: 1.3em;
   position: absolute;
   bottom: 5px;
   left: 0px;
   height: 16px;
-  text-align: center;
   overflow: visible;
 }
 h2 {
@@ -77,12 +82,8 @@ h2 {
   font-size: 2.3em;
   color: rgba(255,255,255,0.50);
   text-decoration: overline;
-  text-shadow: 0 0 2px #444;
   filter: drop-shadow(0 0 3px #ccc);
 }
-
-/*remove*/
-
 div.parallax-container {
 	position: relative;
 	width: 100%;
@@ -95,7 +96,6 @@ div.parallax-container div.parallax {
 	top: 0px;
 	left: 0px;
 	width: 2500px;
-	text-align: center;
 	height: 250px;
 	font-weight: bold;
 }
@@ -103,27 +103,22 @@ div.parallax-container div.parallax {
 	color: #555;
 	font-size: 250px;
 	line-height: 80%;
-    font-family: 'Cinzel Decorative';
-    text-shadow:0 0 1px #333, 0 0 6px #ccc, 9px 1px 5px #aaa;
-    /*filter: drop-shadow(0 0 3px #444);*/
+  font-family: 'Cinzel Decorative';
+  text-shadow:0 0 1px #333, 0 0 6px #ccc, 9px 1px 5px #aaa;
+    /*
+Creates a bug? 
+    filter: drop-shadow(0 0 3px #444);*/
 }
 .parallax2 {
-	/*color: #999;*/
 	font-size: 100px;
 	line-height: 320%;
   background-image: url("../images/cloud-stars.png");
-  background-size: contain;
-    font-family: 'Flamenco';
-    color: rgba(255,255,255,0.70);
-    text-shadow: 0 0 2px #444;
-    filter: drop-shadow(0 0 3px #ccc);
+  color: rgba(255,255,255,0.70);
+  filter: drop-shadow(0 0 3px #ccc);
 }
 .parallax3 {
   color: #aaa;
 	font-size: 50px;
 	line-height: 760%;
   background-image: url("../images/cloud-stars2.png");
-  background-size: contain;
-    font-family: 'Flamenco';
-    text-shadow: 0 0 2px #444;
 }
